@@ -1,0 +1,18 @@
+{
+  "name": "hardhat-project",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@tableland/sdk": "^3.1.0",
+    "dotenv": "^16.0.2",
+    "files-from-path": "^0.2.6",
+    "mime": "^3.0.0",
+    "nft.storage": "^7.0.0",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
+  }
+}
