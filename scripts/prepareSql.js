@@ -28,7 +28,7 @@ async function prepareSqlForTwoTables(mainTable, attributesTable) {
         for await (let attribute of attributes){  //this loops through the attributes object we get when we destructure it from the metadata object
             const {trait_type, value} = attribute 
 
-            const attributesStatement = `INSERT INTO ${attributesTable} (main_id, trait_type, value) VALUES (${id}, '${trait_type}, '${value}');`
+            const attributesStatement = `INSERT INTO ${attributesTable} (main_id, trait_type, value) VALUES (${id}, '${trait_type}', '${value}');`
             //this prepares the insert statements for the attributes table, then wil append the statement to an array that holds the insert statements for all metadata objects
             attributesTableStatements.push(attributesStatement)
         }

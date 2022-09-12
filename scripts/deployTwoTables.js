@@ -79,7 +79,7 @@ async function main() {
 
     for await (let attribute of attributes) {
       let { hash: attrWriteTx } = await tableland.write(attribute);
-      receipt = table.receipt(attrWriteTx);
+      receipt = tableland.receipt(attrWriteTx);
 
       if (receipt) {
         console.log(`${attributesName} table: ${attribute}`);
